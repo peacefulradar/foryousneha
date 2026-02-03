@@ -125,7 +125,7 @@ function sureClicked() {
   subOptions.style.display = "block";
 }
 
-/* Sub-option responses */
+/* Sub-option responses (keep sub-options visible) */
 function finalChoice(choice) {
   let msg = "";
   if (choice === "delhi") {
@@ -136,7 +136,7 @@ function finalChoice(choice) {
     msg = "Haha, okay… we can start virtually 😏";
   }
   showMessage(msg);
-  subOptions.style.display = "none";
+  // subOptions stays visible
 }
 
 /* Floating paper planes */
